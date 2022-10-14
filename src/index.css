@@ -10,6 +10,7 @@
 
 :root{
   --primary-hue: 210;
+  --color-red: red;
   --gray-hue:240;
   --color-primary: hsl(var(--primary-hue), 100%, 50%);
   --color-primary-variant: hsl(var(--primary-hue), 100%, 65%);
@@ -32,7 +33,7 @@
 body{
   font-family: Helvetica;
   /* font-family: 'Montserrat', sans-serif; */
-  color: var(--color-gray-200);
+  color: var(--color-gray-100);
   line-height: 1.4;
   
 }

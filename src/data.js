@@ -29,3 +29,31 @@ export const links = [
   }
  
 ]
+
+export const links__mobile = [
+  {
+    name: "Home",
+    path: '/'
+  },
+  {
+    name: "About Us",
+    path: '/aboutUs'
+  },
+  {
+    name: "Residential",
+    path: '/residential'
+  },
+  {
+    name: "Commercial",
+    path: '/commercial'
+  },
+  {
+    name: `Developer Project`,
+    path: '/developerProject'
+  },
+  {
+    name: "Contact Us",
+    path: '/contactUs'
+  },
+ 
+]
