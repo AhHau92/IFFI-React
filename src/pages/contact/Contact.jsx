@@ -1,8 +1,12 @@
 import './contact.css'
+import BgImage from '../../images/contact_us.jpg'
+import Header from '../../components/Header'
 
 const Contact = () => {
   return (
-    <div></div>
+    <>
+      <Header title="CONTACT US" image={BgImage}></Header>
+    </>
   )
 }
 

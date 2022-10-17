@@ -9,7 +9,13 @@ const Footer = () => {
     <footer>
       <div className="divider"></div>
       <div className="footer__container">
+          
+
         <div className="footer__left">
+          <div className='footer__left_img'>
+              <img src={Logo} className='footer_left_Logo' />
+            </div>
+
           <div className="footer__company-name">
             <span className='text-red'>IF</span>FI DESIGN sdn. bhd.
           </div>
@@ -34,8 +40,8 @@ const Footer = () => {
 
         </div>
         <div className="footer__right">
-          <div>
-           <img src={Logo} className='footer__Logo' />
+          <div className='footer__right_img'>
+           <img src={Logo} className='footer_right_Logo' />
           </div>
           <div className="footer__social-media">
             <a href=""><FaWhatsapp /></a>

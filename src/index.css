@@ -1,4 +1,6 @@
-*,*::after,*::before{
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
   border: 0;
@@ -6,12 +8,13 @@
   list-style: none;
   text-decoration: none;
   box-sizing: border-box;
+  font-weight: 400;
 }
 
-:root{
+:root {
   --primary-hue: 210;
   --color-red: red;
-  --gray-hue:240;
+  --gray-hue: 240;
   --color-primary: hsl(var(--primary-hue), 100%, 50%);
   --color-primary-variant: hsl(var(--primary-hue), 100%, 65%);
   --color-secondary: #ffb116;
@@ -21,7 +24,6 @@
   --color-gray-400: hsl(var(--gray-hue), 16%, 41%);
   --color-gray-500: hsl(var(--gray-hue), 44%, 25%);
   --color-gray-600: hsl(var(--gray-hue), 48%, 15%);
-  
 
   --container-width-lg: 80%;
   --container-width-md: 90%;
@@ -30,26 +32,79 @@
 }
 
 /* GENERAL STYLE */
-body{
+body {
   font-family: Helvetica;
-  /* font-family: 'Montserrat', sans-serif; */
-  color: var(--color-gray-100);
+  color: #fff;
   line-height: 1.4;
-  
 }
 
-.container{
-  width: var(--container-width-lg);
-  max-width: 1920px;
-  margin-inline: auto;
-}
-
-a{
+a {
   color: var(--color-gray-100);
 }
 
-img{
+img {
   display: block;
   object-fit: cover;
   width: 100%;
+}
+
+.divider {
+  background: linear-gradient(90deg, #ec1c24 50%, #fff 0);
+  height: 3px;
+}
+
+.section{
+  background: linear-gradient(#262626,#000);
+  /* color: #fff; */
+}
+
+.header__container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: grid;
+  place-items: center;
+}
+
+.header__container-bg {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.header__content {
+  width: 80%;
+  position: absolute;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.75rem;
+  letter-spacing: 85px;
+  margin-right: -85px;
+}
+
+
+
+/* MEDIA QUERIES (MEDIUM SCREENS) */
+@media screen and (max-width: 1024px) {
+
+  .header__content {
+    font-size: 1.4rem;
+    letter-spacing: 5vw;
+  }
+}
+
+
+
+/* MEDIA QUERIES (SMALL SCREENS) */
+@media screen and (max-width: 600px) {
+
+  .header__content {
+    font-size: 0.7rem;
+    margin-right: -30px;
+  }
+
+  .header__container-bg img {
+    height: 307px;
+  }
+
 }

@@ -1,11 +1,11 @@
-import './home.css'
-import Image from '../../images/home_kv.jpg'
+import MainHeader from "../../components/MainHeader"
+
 
 const Home = () => {
   return (
-    <div>
-      <img src={Image} alt="" />
-    </div>
+    <>
+    <MainHeader />
+    </>
   )
 }
 

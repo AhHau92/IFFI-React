@@ -1,6 +1,6 @@
 import Logo from '../images/logo.jpg'
 import { useState } from 'react'
-import { Link, NavLink } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import './navbar.css'
 import { links } from '../data'
 import { links__mobile } from '../data'
@@ -10,7 +10,7 @@ import Cross from '../images/cross.png'
 
 const Navbar = () => {
 
-  const [isNavShowing, setIsNavShowing] = useState(true);
+  const [isNavShowing, setIsNavShowing] = useState(false);
 
   return (
     <nav>
