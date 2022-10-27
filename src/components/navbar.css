@@ -12,13 +12,25 @@ nav{
 }
 /* only show on medium and small screnns */
 .nav__links__mobile{
-    position: absolute;
+    position: fixed;
     display: none;
     background: rgba(0,0,0,.8);
     width: 100%;
     padding: 5vw 4vw;
     text-align: center;
     top: 0;
+    overflow: hidden;
+    z-index: 999;
+}
+
+.nav__links__mobile li{
+  position: relative;
+  z-index: 999;
+}
+
+.nav__links__mobile li a{
+  position: relative;
+  z-index: 999;
 }
 /* only show on medium and small screnns */
 .nav__toggle-btn{
@@ -45,6 +57,8 @@ nav{
   text-align: center;
   justify-content: center;
   display: flex;
+  position: relative;
+  z-index: 99;
 }
 
 .nav__links li:nth-child(3){
@@ -61,6 +75,7 @@ nav{
   max-width: 110px;
   top: 1%;
   left: calc(50% - 55px);
+  z-index: 999;
 }
 
 .active-nav {
@@ -85,6 +100,10 @@ nav{
 
 /* MEDIA QUERIES (MEDIUM SCREENS) */
 @media screen and (max-width: 1024px) {
+  nav{
+    height: 130px;
+  }
+  
   .nav__links{
     display: none;
   }
@@ -126,16 +145,17 @@ nav{
     content: '';
     display: block;
     margin-top: 30px;
-    width: 92%;
+    width: 755px;
     height: 1px;
     background: red;
     position: absolute;
+    z-index: 9999;
   }
 
   .nav__cross{
     width: 5.3vw;
     max-width: 40px;
-    padding: 20vh 0 15vh;
+    padding: 20vh 0 17.4vh;
     margin: 0 auto;
   }
 
@@ -159,6 +179,10 @@ nav{
   .nav__links__mobile li a{
     font-size: 3.5vw;
     padding: 4vw 32vw;
+  }
+
+  .active-nav__mobile::after {
+    width: 363px;
   }
   
   

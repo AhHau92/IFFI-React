@@ -1,1 +1,179 @@
+ 
+/* =====Commercial=====DeveloperProject=====Residentail  */
+
+.section-product{
+  padding: 70px 110px;
+}
+
+.section-product p{
+  font-size: 20px;
+  padding-bottom: 10px;
+  text-align: justify;
+}
+
+.image-section{
+  background: #000;
+}
+
+.inner__wrapper{
+  position: relative;
+  margin:  0 auto;
+  max-width: 1176px;
+  padding-bottom: 100px;
+  z-index: 1;
+}
+
+.project{
+  display: grid;
+  position: relative;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  z-index: 1;
+}
+
+.project__name{
+  font-weight: 700;
+}
+
+.cover1,
+.cover2,
+.cover3,
+.cover4{
+  display: block;
+  opacity: 0.5;
+  cursor: default;
+  transition: var(--transition);
+  z-index: 1;
+}
+
+.project1__divider,
+.project2__divider,
+.project3__divider,
+.project4__divider{
+  z-index: 2;
+  position: relative;
+  display: none;
+  margin-top: -3px;
+}
+
+
+.project a:hover .cover1,
+.project a:hover .project1__divider {
+  opacity: 1;
+  display: block;
+}
+
+.project a:hover .cover2,
+.project a:hover .project2__divider {
+  opacity: 1;
+  display: block;
+}
+
+.project a:hover .cover3,
+.project a:hover .project3__divider {
+  opacity: 1;
+  display: block;
+}
+
+.project a:hover .cover4,
+.project a:hover .project4__divider {
+  opacity: 1;
+  display: block;
+}
+
+.project-first,
+.project-second,
+.project-third,
+.project-fourth
+{
+  position: relative;
+}
+
+.project-info{
+  width: 500px;
+  position: absolute;
+  text-align: center;
+  left: calc(50% - 250px);
+  top: calc(50% - 30.795px);
+  z-index: 99;
+  
+}
+
+.project__category{
+  font-size: 20px;
+}
+
+.project__name{
+  font-size: 24px;
+}
+
+
+
+
+/* MEDIA QUERIES (medium SCREENS) */
+@media screen and (max-width: 1024px) {
+
+  .inner__wrapper{
+    max-width: 660px;
+  }
+
+  .project-info{
+    width: 300px;
+    left: calc(50% - 150px);
+    
+  }
+
+  .section-product{
+    padding: 70px 85px;
+  }
+
+}
+
+  
+
+
+
+
+/* MEDIA QUERIES (SMALL SCREENS) */
+@media screen and (max-width: 600px) {
+  .inner__wrapper{
+    max-width: 300px;
+  }
+
+  .section-product{
+    padding: 50px 15px;
+  }
+
+  .project{
+    grid-template-columns: 1fr;
+  }
+
+  .section-product p{
+    font-size: 14px;
+  }
+
+  .inner-wrapper{
+    padding: 0 46.5px;
+    padding-bottom: 100px;
+  }
+
+  .project__category{
+    font-size: 18px;
+  }
+  
+  .project__name{
+    font-size: 18px;
+  }
+
+  .project-info{
+    width: 280px;
+    left: calc(50% - 140px);
+    
+  }
+}
+
+
+
+
+
 

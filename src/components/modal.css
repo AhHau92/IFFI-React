@@ -1,0 +1,124 @@
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+  height: 100%;
+}
+
+
+.modalContainer {
+  max-width: 1200px;
+  width: 100%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  z-index: 999;
+  background-color: transparent;
+  box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.75);
+}
+
+.popUp-Img {
+  width: 1200px;
+  object-fit: cover;
+  z-index: 9999;
+}
+
+.redArrow_Right {
+  height: 58px;
+  width: 30px;
+  position: absolute;
+  z-index: 99999;
+  right: -7%;
+  top: 45%;
+  cursor: pointer;
+}
+
+.redArrow_Left {
+  height: 58px;
+  width: 30px;
+  position: absolute;
+  z-index: 99999;
+  top: 45%;
+  left: -7%;
+  cursor: pointer;
+}
+
+.closePopup {
+  width: 40px;
+  right: -7%;
+  top: -3%;
+  height: 40px;
+  position: absolute;
+  z-index: 99999;
+  cursor: pointer;
+}
+
+
+
+
+
+/* MEDIA QUERIES (MEDIUM SCREENS) */
+@media screen and (max-width: 1024px) {
+
+  .modalContainer {
+    max-width: 700px;
+
+  }
+
+  .popUp-Img {
+    width: 700px;
+  }
+
+
+}
+
+
+
+/* MEDIA QUERIES (SMALL SCREENS) */
+@media screen and (max-width: 600px) {
+
+
+  .modalContainer {
+    max-width: 320px;
+
+  }
+
+  .popUp-Img {
+    width: 320px;
+  }
+
+  .redArrow_Right {
+    height: 38px;
+    width: 20px;
+    position: absolute;
+    z-index: 99999;
+    right: -9%;
+    top: 40%;
+    cursor: pointer;
+  }
+
+  .redArrow_Left {
+    height: 38px;
+    width: 20px;
+    position: absolute;
+    z-index: 99999;
+    top: 40%;
+    left: -9%;
+    cursor: pointer;
+  }
+
+  .closePopup {
+    width: 30px;
+    right: -7%;
+    top: -27%;
+    height: 40px;
+    position: absolute;
+    z-index: 99999;
+    cursor: pointer;
+  }
+
+
+}

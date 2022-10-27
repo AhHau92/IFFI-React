@@ -36,6 +36,10 @@ body {
   font-family: Helvetica;
   color: #fff;
   line-height: 1.4;
+  margin: 0 auto;
+  max-width: 1440px;
+  /* overflow: hidden; */
+  height: 100%;
 }
 
 a {
@@ -52,10 +56,18 @@ img {
   background: linear-gradient(90deg, #ec1c24 50%, #fff 0);
   height: 3px;
 }
+.divider1 {
+  background: linear-gradient(90deg, #fff 50%, #ec1c24 0);
+  height: 3px;
+}
 
 .section{
   background: linear-gradient(#262626,#000);
-  /* color: #fff; */
+}
+
+.inner__wrapper{
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .header__container {

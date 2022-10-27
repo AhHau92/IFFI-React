@@ -1,0 +1,151 @@
+.Project{
+  position: relative;
+}
+
+.Project__info{
+  position: absolute;
+  text-align: center;
+  width: 770px;
+  left: calc(50% - 385px);
+  height: 80px;
+  top: calc(50% - 45px);
+  z-index: 10;
+  text-shadow: 2px 2px 10px #000;
+}
+
+.Project__info h1{
+  font-size: 26px;
+}
+
+.Project__info h2{
+  font-size: 42px;
+  font-weight: 700;
+}
+
+.Album__image{
+  background: #000;
+  padding-top: 45px;
+}
+
+.Album__image img{
+  width: 1080px;
+  height: 645px;
+  margin: 0 auto;
+  padding-bottom: 45px;
+}
+
+.Album__image img:nth-last-child(1){
+  padding-bottom: 60px;
+}
+
+.btn--previous,
+.btn--next{
+  width: 25px;
+  height: 45px;
+}
+
+.btn--previous{
+  margin-right: 25px;
+}
+
+.btn--next{
+  margin-left: 25px;
+}
+
+.navigator{
+  display: flex;
+  justify-content: space-between;
+  background: #000;
+  padding: 0 140px 70px;
+}
+
+.navigator__description_left h1,
+.navigator__description_right h1{
+  font-size: 14px;
+}
+
+.navigator__description_left h2,
+.navigator__description_right h2{
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.navigator__btn--previous,
+.navigator__btn--next{
+  display: flex;
+}
+
+.navigator__btn--next{
+  text-align: right;
+}
+
+
+
+/* MEDIA QUERIES (MEDIUM SCREENS) */
+@media screen and (max-width: 1024px) {
+
+.Album__image img{
+  width: 820px;
+  height: 450px;
+}
+
+.navigator{
+  padding: 0 40px 40px;
+}
+
+.Project__info h2{
+  font-size: 33px;
+}
+
+} 
+
+/* MEDIA QUERIES (SMALL SCREENS) */
+@media screen and (max-width: 600px) {
+
+.Album__image img{
+  width: 393px;
+  height: 281px;
+}
+
+.navigator{
+  display: block;
+  padding: 0 15px 45px;
+}
+
+.btn--previous,
+.btn--next{
+  width: 20px;
+  height: 40px;
+}
+
+.Project__info h1{
+  font-size: 18px; 
+}
+
+.Project__info h2{
+  font-size: 21px;
+}
+
+.Project__info{
+  width: 350px;
+  left: calc(50% - 175px);
+}
+
+.Project__info h2{
+  width: 350px;
+}
+
+.navigator__description_left h2,
+.navigator__description_right h2{
+  font-size: 17px;
+}
+
+.btn--previous{
+  margin-right: 15px;
+}
+
+.btn--next{
+  margin-left: 15px;
+}
+
+}
