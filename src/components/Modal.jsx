@@ -31,10 +31,10 @@ const Modal = ({open , onClose}) => {
   return (
     <div className='overlay'>
       <div className="modalContainer">
-        <img src={redArrow_Left} className='redArrow_Left' onClick={prevModalHandler} />
-        <img src={image} className='popUp-Img' />
-       <img src={redArrow_Right} className='redArrow_Right' onClick={nextModalHandler} />
-        <img src={closePopup} className='closePopup' onClick={onClose} />
+        <img alt='redArrowLeft' src={redArrow_Left} className='redArrow_Left' onClick={prevModalHandler} />
+        <img alt='Popupimg' src={image} className='popUp-Img' />
+       <img alt='redArrowRight' src={redArrow_Right} className='redArrow_Right' onClick={nextModalHandler} />
+        <img alt='closepopup' src={closePopup} className='closePopup' onClick={onClose} />
 
       </div>
       

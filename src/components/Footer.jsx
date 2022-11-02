@@ -13,7 +13,7 @@ const Footer = () => {
 
         <div className="footer__left">
           <div className='footer__left_img'>
-              <img src={Logo} className='footer_left_Logo' />
+              <img src={Logo} className='footer_left_Logo' alt='footer'/>
             </div>
 
           <div className="footer__company-name">
@@ -41,12 +41,12 @@ const Footer = () => {
         </div>
         <div className="footer__right">
           <div className='footer__right_img'>
-           <img src={Logo} className='footer_right_Logo' />
+           <img src={Logo} className='footer_right_Logo' alt='footer'/>
           </div>
           <div className="footer__social-media">
-            <a href=""><FaWhatsapp /></a>
-            <a href=""><BsInstagram /></a>
-            <a href=""><FaFacebookF /></a>
+            <a href="#jacascript"><FaWhatsapp /></a>
+            <a href="#jacascript"><BsInstagram /></a>
+            <a href="#jacascript"><FaFacebookF /></a>
 
           </div>
           <div className="footer__copy-right">

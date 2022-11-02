@@ -14,9 +14,9 @@ const Contact = () => {
 
         <div className="contact-us__contact">TEL +6018 210 4678</div>
         <div className="contact-us__social">
-          <a href=""><FaWhatsapp /></a>
-          <a href=""><BsInstagram /></a>
-          <a href=""><FaFacebookF /></a>
+          <a href="#javascript"><FaWhatsapp /></a>
+          <a href="#javascript"><BsInstagram /></a>
+          <a href="#javascript"><FaFacebookF /></a>
         </div>
       </div>
       <div className="contact-us__map">

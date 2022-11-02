@@ -13,7 +13,7 @@ import Modal from './Modal'
 import Modal__2 from './Modal__2'
 import Modal__3 from './Modal__3'
 
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
